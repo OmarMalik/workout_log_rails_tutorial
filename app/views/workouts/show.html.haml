@@ -1,5 +1,7 @@
 #workout
-  %p= @workout.date
-  %p= @workout.workout
+  %h2= @workout.date
+  %h3= @workout.workout
   %p= @workout.mood
   %p= @workout.length
+  
+=link_to "Home", workouts_path

@@ -1,1 +1,5 @@
-%h1 workout#index placeholder
+= link_to 'New Workout', new_workout_path
+
+- @workouts.each do |workout|
+	%h1= link_to workout.date, workout
+	%h2= workout.workout
