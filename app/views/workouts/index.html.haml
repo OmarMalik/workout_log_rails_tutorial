@@ -1,5 +1,5 @@
 = link_to 'New Workout', new_workout_path
 
 - @workouts.each do |workout|
-	%h1= link_to workout.date, workout
+	%h1= link_to workout.date.strftime("%m/%d/%Y"), workout
 	%h2= workout.workout
